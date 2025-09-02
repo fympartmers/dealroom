@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success - FYM Partners</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .success-container {
+            min-height: calc(100vh - 200px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .success-card {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #6fc276;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+        }
+        
+        .checkmark {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            animation: checkmark 0.5s ease-in-out;
+        }
+        
+        @keyframes checkmark {
+            from {
+                stroke-dasharray: 50;
+                stroke-dashoffset: 50;
+            }
+            to {
+                stroke-dasharray: 50;
+                stroke-dashoffset: 0;
+            }
+        }
+        
+        .success-title {
+            color: #1a3d52;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .success-message {
+            color: #6c757d;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .back-home {
+            display: inline-block;
+            padding: 14px 40px;
+            background: #4db8b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .back-home:hover {
+            background: #3da09d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="FYM Partners Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Deals</a></li>
+                <li><a href="how-to.html" class="nav-link">How To</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Message -->
+    <div class="success-container">
+        <div class="success-card">
+            <div class="success-icon">
+                <svg class="checkmark" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h1 class="success-title">Thank You!</h1>
+            <p class="success-message">
+                Your submission has been received successfully. Our team will review your information and get back to you within 24 hours.
+            </p>
+            <p class="success-message">
+                You'll receive a confirmation email shortly at the address you provided.
+            </p>
+            <a href="index.html" class="back-home">Back to Deals</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FYM Partners. All rights reserved. | Private & Confidential</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
