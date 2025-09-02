@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FYM Partners</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="FYM Partners Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Deals</a></li>
+                <li><a href="how-to.html" class="nav-link">How To</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Have questions about our deals or need assistance? We're here to help.</p>
+
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form name="contact-form" method="POST" data-netlify="true" action="/success.html" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact-form">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-organization">Organization</label>
+                                <input type="text" id="contact-organization" name="organization">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry-type">Inquiry Type *</label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">Select an option</option>
+                                <option value="deal-access">Request Deal Access</option>
+                                <option value="deal-question">Question About Specific Deal</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="technical">Technical Support</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deal-interest">Deal of Interest (if applicable)</label>
+                            <input type="text" id="deal-interest" name="deal-interest" placeholder="e.g., FinTech Platform, Healthcare Network">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="request-access" name="request-access">
+                            <label for="request-access">I would like to request access to view private deals</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Direct Contact</h3>
+                        <div class="info-item">
+                            <strong>Deal Inquiries:</strong>
+                            <p>a.wutawunashe@fymafrica.com</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Response Time:</strong>
+                            <p>We typically respond within 24 hours during business days</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>What Happens Next?</h3>
+                        <ol class="process-list">
+                            <li>Your inquiry will be reviewed by our team</li>
+                            <li>For deal access requests, we'll send an NDA for your review</li>
+                            <li>Once approved, you'll receive secure access to relevant materials</li>
+                            <li>A team member may reach out for additional information if needed</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Confidentiality Notice</h3>
+                        <p>All communications through this platform are treated with strict confidentiality. Information shared will only be used for the purposes of evaluating and facilitating investment opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FYM Partners. All rights reserved. | Private & Confidential</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
